@@ -1,0 +1,187 @@
+
+header{
+   margin-bottom: 190px;
+}
+
+nav{
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+a,a:visited{
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 22px;
+    padding-right: 80px;
+
+}
+
+nav a{
+    transition:letter-spacing 1s, border-right-width 1.5s;
+    transition-delay: 0.1s;
+    color: white;
+    border-color: red;
+
+
+
+}
+nav a:hover{
+    color: white;
+    letter-spacing: 7px;
+    border-bottom:3px solid;
+    border-right:1px solid;
+
+    border-bottom-width: 5px;
+}
+h1 img{
+    position: absolute;
+    top: 40px;
+    width:100px;
+    left:  50px;
+}
+
+
+
+body{
+    background: url("background.svg");
+}
+main{
+
+    position: sticky;
+    width: 100px;
+    height: 80px;
+
+}
+
+main{
+    width: 100%;
+    height: 550px;
+
+    box-sizing: content-box;
+
+}
+main div{
+    display: inline-block;
+
+    position: relative;
+}
+textarea{
+    padding-top: 19px;
+    position: absolute;
+    margin:50px  140px;
+    resize: none;
+    padding-right: 190px;
+    vertical-align: top;
+    border: 2px transparent solid;
+    border-radius: 15px;
+    background-color: #666666;
+    color: #dddddd;
+    outline: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: x-large;
+
+}
+
+textarea:focus::placeholder{
+    text-color: transparent;
+}
+
+
+
+
+
+
+.botoes{
+    display: inline-block ;
+    position: absolute;
+    top: 400px;
+    width: 800px;
+    left:100px;
+    margin: 30px 30px;
+    padding: 10px 10px;
+    border-width: 0;
+
+
+
+}
+.botao:hover{
+    padding-right: 90px;
+    border-radius: 0 10px 0 0;
+    background-color: #dddddd;
+    border-bottom-width: 5px;
+
+    border-bottom-color: #666666;
+    cursor: pointer;
+    transform: skewY(1deg);
+
+
+
+
+
+
+}
+
+.botao{
+    display: inline-block;
+    padding: 30px 60px;
+    margin: 30px 30px;
+    margin-left: 60px;
+    border-radius: 0 0 0 15px;
+    font-family: 'Questrial', sans-serif;
+    font-size: x-large;
+    color: #666666;
+    font-weight: bolder;
+    transition: 0.2s;
+
+
+}
+#entrada:focus::placeholder,#saida:focus::placeholder,#entrada:hover::placeholder{
+    color: transparent;
+    transition-delay: 1s;
+}
+#entrada:hover,#entrada:focus{
+    transform: scale(105%);
+
+    color:#dddddd;
+    background-color: rgba(48,52,57,9);
+
+}
+
+#entrada{
+    padding: 50px 50px;
+
+    margin-left: 100px;
+    transform-style: initial ;
+    transition-duration: 1s;
+    background-color: transparent;
+    left: 50px;
+
+}
+#entrada::placeholder{
+    color: #dddddd;
+
+
+}
+
+#entrada:focus(::placeholder){
+    color: transparent;
+}
+
+
+#saida{
+    padding: 50px 50px;
+    left: 980px;
+    background: rgba(48,52,58,65) url("feitos.png") no-repeat center;
+    font-weight: bolder;
+    background-blend-mode: unset    ;
+    transition: background 1s;
+}
+#saida:focus,#saida:hover{
+    background-color: rgba(48,52,58,100);
+    background-blend-mode: overlay  ;
+
+}
