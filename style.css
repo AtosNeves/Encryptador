@@ -1,6 +1,10 @@
 
 header{
-   margin-bottom: 190px;
+    position: relative;
+    margin-bottom: 10px;
+
+    width: 100%;
+    height: 200px;
 }
 
 nav{
@@ -16,7 +20,7 @@ nav li{
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     margin: 22px;
-    padding-right: 80px;
+    padding-right: 110px;
 
 }
 
@@ -24,7 +28,7 @@ nav a{
     transition:letter-spacing 1s, border-right-width 1.5s;
     transition-delay: 0.1s;
     color: white;
-    border-color: red;
+
 
 
 
@@ -47,32 +51,27 @@ h1 img{
 
 
 body{
-    background: url("background.svg");
+
+    background: rgba(48,52,58,65);
 }
-main{
+.centro{
+    overflow: hidden;
 
-    position: sticky;
-    width: 100px;
-    height: 80px;
-
-}
-
-main{
+    position:absolute;
     width: 100%;
-    height: 550px;
+    height: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
 
-    box-sizing: content-box;
 
 }
-main div{
-    display: inline-block;
 
-    position: relative;
-}
+
+
 textarea{
     padding-top: 19px;
     position: absolute;
-    margin:50px  140px;
+    margin:50px  40px;
     resize: none;
     padding-right: 190px;
     vertical-align: top;
@@ -83,11 +82,10 @@ textarea{
     outline: none;
     font-family: 'Heebo', sans-serif;
     font-size: x-large;
-
 }
 
 textarea:focus::placeholder{
-    text-color: transparent;
+    color: transparent;
 }
 
 
@@ -98,18 +96,20 @@ textarea:focus::placeholder{
 .botoes{
     display: inline-block ;
     position: absolute;
-    top: 400px;
+    top: 450px;
     width: 800px;
-    left:100px;
+    left:120px;
+
     margin: 30px 30px;
     padding: 10px 10px;
     border-width: 0;
 
 
 
+
 }
 .botao:hover{
-    padding-right: 90px;
+
     border-radius: 0 10px 0 0;
     background-color: #dddddd;
     border-bottom-width: 5px;
@@ -140,25 +140,26 @@ textarea:focus::placeholder{
 
 }
 #entrada:focus::placeholder,#saida:focus::placeholder,#entrada:hover::placeholder{
-    color: transparent;
+    color: white;
     transition-delay: 1s;
 }
 #entrada:hover,#entrada:focus{
     transform: scale(105%);
 
-    color:#dddddd;
-    background-color: rgba(48,52,57,9);
+
+    background-color: #151515 ;
 
 }
 
 #entrada{
     padding: 50px 50px;
-
-    margin-left: 100px;
+    background-color: transparent;
+    margin-left: 30px;
     transform-style: initial ;
     transition-duration: 1s;
-    background-color: transparent;
-    left: 50px;
+
+
+    left: 0;
 
 }
 #entrada::placeholder{
@@ -170,18 +171,46 @@ textarea:focus::placeholder{
 #entrada:focus(::placeholder){
     color: transparent;
 }
+#entrada:after{
+    transform: scale(100%)
+}
 
 
 #saida{
-    padding: 50px 50px;
-    left: 980px;
+    padding: 50px 70px;
+    left: 0;
+    width: 630px;
+    height: 450px;
     background: rgba(48,52,58,65) url("feitos.png") no-repeat center;
     font-weight: bolder;
-    background-blend-mode: unset    ;
+    background-blend-mode: unset;
     transition: background 1s;
 }
 #saida:focus,#saida:hover{
     background-color: rgba(48,52,58,100);
     background-blend-mode: overlay  ;
+
+}
+
+.div-entrada{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left:150px;
+    overflow: hidden;
+    width: 870px;
+    height: 500px;
+
+    margin-bottom: 10px;
+}
+.div-saida{
+    display: inline-block;
+    position: relative;
+    left:150px;
+    overflow: hidden;
+    width: 870px;
+    height: 650px;
+
+    margin-bottom: 10px;
 
 }
