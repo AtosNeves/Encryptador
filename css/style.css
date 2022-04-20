@@ -1,0 +1,256 @@
+
+header{
+    position: relative;
+    margin-bottom: 10px;
+
+    width: 100%;
+    height: 200px;
+}
+
+nav{
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+a,a:visited{
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 22px;
+    padding-right: 110px;
+
+}
+
+nav a{
+    transition:letter-spacing 1s, border-right-width 1.5s;
+    transition-delay: 0.1s;
+    color: white;
+
+
+
+
+}
+nav a:hover{
+    color: white;
+    letter-spacing: 3px;
+    border-bottom:3px solid;
+    border-right:1px solid;
+
+    border-bottom-width: 5px;
+}
+h1 img{
+    position: absolute;
+    top: 40px;
+    width:100px;
+    left:  50px;
+}
+
+
+
+body{
+
+    background: rgba(48,52,58,65);
+}
+.centro{
+    overflow: hidden;
+
+    position:absolute;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+
+
+textarea{
+    padding-top: 20px;
+    position: absolute;
+    margin:20px  40px;
+    resize: none;
+    padding-right: 190px;
+    vertical-align: top;
+    border: 2px transparent solid;
+    border-radius: 15px;
+    background-color: #666666;
+    color: #dddddd;
+    outline: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: x-large;
+}
+
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+
+
+
+
+
+.botoes{
+    display: inline-block ;
+    position: absolute;
+    top: 450px;
+    width: 800px;
+    left:120px;
+
+    margin: 30px 30px;
+    padding: 10px 10px;
+    border-width: 0;
+
+
+
+
+}
+.botao:hover{
+
+    border-radius: 0 10px 0 0;
+    background-color: #dddddd;
+    border-bottom-width: 5px;
+
+    border-bottom-color: #666666;
+    cursor: pointer;
+    transform: skewY(1deg);
+
+
+
+
+
+
+}
+
+.botao{
+    display: inline-block;
+    padding: 30px 60px;
+    margin: 30px 30px;
+    margin-left: 60px;
+    border-radius: 0 0 0 15px;
+    font-family: 'Questrial', sans-serif;
+    font-size: x-large;
+    color: #666666;
+    font-weight: bolder;
+    transition: 0.2s;
+
+
+}
+#entrada:focus::placeholder,#saida:focus::placeholder,#entrada:hover::placeholder{
+    color: transparent;
+    transition-delay: 1s;
+}
+#entrada:hover,#entrada:focus{
+    transform: scale(105%);
+
+
+    background-color: #3B444B ;
+
+}
+
+#entrada{
+    padding: 60px 60px;
+
+    margin-left: 30px;
+    transform-style: initial ;
+    transition-duration: 1s;
+    background-color: transparent;
+    color: white;
+    left: 0;
+
+}
+#entrada::placeholder{
+    color: #dddddd;
+
+
+}
+
+#entrada:focus(::placeholder){
+    color: transparent;
+}
+#entrada:after{
+    transform: scale(100%)
+}
+
+
+#saida{
+    padding: 50px 70px;
+    left: 0;
+    width: 430px;
+    height: 450px;
+    background: black  no-repeat center;
+    font-weight: bolder;
+    background-blend-mode: unset;
+    transition: background 1s;
+
+}
+.div-saida:focus,.div-saida:hover{
+    background-color: #3B444B;
+    background-blend-mode: overlay  ;
+    transform: scale(102%);
+
+}
+
+.div-entrada{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left:150px;
+    overflow: hidden;
+    width: 870px;
+    height: 500px;
+
+    margin-bottom: 10px;
+}
+.div-saida {
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    display: inline-block;
+    position: relative;
+    padding: 40px 60px;
+    left: 150px;
+    top: 5px;
+    width: 770px;
+    height: 650px;
+
+    background: #22272c no-repeat center;
+    background-blend-mode: soft-light;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+    transition: 0.5s;
+
+
+}
+.h1{
+    border-width: 2px;
+    border-color:red;
+    font-family: 'Heebo', sans-serif;
+    font-size: x-large;
+    color:white ;
+    max-width: 750px;
+    font-palette: light;
+
+}
+
+::-webkit-scrollbar {
+    background-color: #666666;
+    border-radius: 10px 10px;
+    scroll-behavior: auto;
+
+
+}
+::-webkit-scrollbar-track-piece  {
+    width: 5px;
+    height: 5px;
+    background-color: #dddddd;
+    -webkit-border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #666;
+    -webkit-border-radius: 6px;
+}

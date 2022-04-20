@@ -5,19 +5,19 @@
       
       <meta name="viewport" content="width=device-width">
       
-      <link rel="stylesheet" href="reset.css">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
       <title>Challenge 1</title>
-      <link rel="icon" href="alura.png" type="image/icon type">
+      <link rel="icon" href="images/alura.png" type="image/icon type">
 
 </head>
 <header>
-      <h1><img src="alura.png" alt="logo"> </h1>
+      <h1><img src="images/alura.png" alt="logo"> </h1>
       <nav>
 	    <ul>
 		  
@@ -30,27 +30,32 @@
 <body>
 
 <main>
-    <div class="centro">
-      <div class="div-entrada">
+      <div class="centro">
+	    <form id="form-palavra">
+	    <div class="div-entrada">
 	    
-      
-	    <label for = "entrada"></label>
-	    <textarea cols="50" rows="8" id="entrada"
-		      placeholder="Digite apenas letras minúsculas"></textarea>
+		  
+		  <label for = "entrada"></label>
+		  <textarea cols="50" rows="8" id="entrada" name="palavra"
+			    placeholder="Digite apenas letras minúsculas"></textarea>
 		 
 	    
 	    
-      </div>
+	    </div>
      
-      <div class="div-saida">
-	    <label for = "saida"></label>
-	    <textarea cols="40" rows="15" id="saida" placeholder="Sem mensagens criptografadas ..."></textarea>
+		  <div class="div-saida">
+			
+		  </div>
+		  <div class="botoes">
+			<button class="botao" id="pegar-palavra" type="submit">Criptografar</button>
+			<button class="botao" id="retorno-palavra" type="submit">Descriptografar</button>
+		  </div>
+	    </form>
       </div>
-      <div class="botoes">
-	    <button class="botao">Criptografar</button>
-	    <button class="botao">Descriptografar</button>
-      </div>
-    </div>
+
 </main>
+
+<script src="js/criptografia.js"></script>
+<script src="js/descriptografia.js"></script>
 </body>
 </html>
