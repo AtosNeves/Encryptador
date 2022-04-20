@@ -58,8 +58,8 @@ body{
     overflow: hidden;
 
     position: relative;
-    width: 100%;
-    height: 700px;
+    width:90%;
+    height:670px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -95,10 +95,10 @@ textarea:focus::placeholder{
 
 .botoes{
     display: inline-block ;
-    position: absolute;
-    top: 450px;
+    position: relative;
+    top: 400px;
     width: 800px;
-    left:120px;
+    right:850px;
 
     margin: 30px 30px;
     padding: 10px 10px;
@@ -152,14 +152,14 @@ textarea:focus::placeholder{
 }
 
 #entrada{
-    padding: 60px 60px;
+    padding: 60px 30px;
 
     margin-left: 30px;
     transform-style: initial ;
     transition-duration: 1s;
     background-color: transparent;
     color: white;
-    left: 0;
+
 
 }
 #entrada::placeholder{
@@ -198,9 +198,9 @@ textarea:focus::placeholder{
     display: inline-block;
     vertical-align: top;
     position: relative;
-    left:80px;
+    left:10px;
     overflow: hidden;
-    width: 870px;
+    width: 800px;
     height: 500px;
 
     margin-bottom: 10px;
@@ -209,9 +209,9 @@ textarea:focus::placeholder{
     overflow-y: auto;
     overflow-wrap: break-word;
     display: inline-block;
-    position:relative;
+    position:absolute;
     padding: 40px 60px;
-    left: 50px;
+    left: 850px;
     top: 5px;
     width: 770px;
     height: 650px;
