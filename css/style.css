@@ -3,7 +3,7 @@ header{
     position: relative;
     margin-bottom: 10px;
 
-    width: 90%;
+
     height: 200px;
 }
 
@@ -11,6 +11,7 @@ nav{
     position: absolute;
     top: 70px;
     right: 0;
+
 }
 a,a:visited{
     text-decoration: none;
@@ -58,8 +59,8 @@ body{
     overflow: hidden;
 
     position: relative;
-    width:90%;
-    height:670px;
+
+    height:770px;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -70,7 +71,7 @@ body{
 
 textarea{
     padding-top: 20px;
-    position: absolute;
+    position: relative;
     margin:20px  40px;
     resize: none;
     padding-right: 190px;
@@ -95,10 +96,10 @@ textarea:focus::placeholder{
 
 .botoes{
     display: inline-block ;
-    position: relative;
+    position: absolute;
     top: 400px;
-    width: 800px;
-    right:850px;
+
+    left: 90px;
 
     margin: 30px 30px;
     padding: 10px 10px;
@@ -189,7 +190,7 @@ textarea:focus::placeholder{
 }
 .div-saida:focus,.div-saida:hover{
     background-color: #3B444B;
-    background-blend-mode: overlay  ;
+    background-blend-mode: overlay;
     transform: scale(102%);
 
 }
@@ -198,7 +199,7 @@ textarea:focus::placeholder{
     display: inline-block;
     vertical-align: top;
     position: relative;
-    left:10px;
+    left:100px;
     overflow: hidden;
     width: 800px;
     height: 500px;
@@ -211,7 +212,7 @@ textarea:focus::placeholder{
     display: inline-block;
     position:absolute;
     padding: 40px 60px;
-    left: 850px;
+    left: 1050px;
     top: 5px;
     width: 770px;
     height: 650px;
