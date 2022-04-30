@@ -8,9 +8,12 @@ header{
 }
 
 nav{
-    position: absolute;
+    position: relative;
     top: 70px;
     right: 0;
+    float: right;
+    width: 400px;
+
 
 }
 a,a:visited{
@@ -21,7 +24,7 @@ nav li{
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     margin: 22px;
-    padding-right: 110px;
+    padding-right: 5%;
 
 }
 
@@ -46,21 +49,23 @@ h1 img{
     position: absolute;
     top: 40px;
     width:100px;
-    left:  50px;
+    left:  130px;
 }
 
 
 
 body{
 
+
     background: rgba(48,52,58,65);
+
 }
 .centro{
-    overflow: hidden;
 
+    height:800px;
     position: relative;
 
-    height:770px;
+
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -98,7 +103,7 @@ textarea:focus::placeholder{
     display: inline-block ;
     position: absolute;
     top: 400px;
-
+    width: 50%;
     left: 90px;
 
     margin: 30px 30px;
@@ -133,11 +138,11 @@ textarea:focus::placeholder{
     margin-left: 60px;
     border-radius: 0 0 0 15px;
     font-family: 'Questrial', sans-serif;
-    font-size: x-large;
+    font-size: 1.3vw;
     color: #666666;
     font-weight: bolder;
     transition: 0.2s;
-
+    width: 30%;
 
 }
 #entrada:focus::placeholder,#saida:focus::placeholder,#entrada:hover::placeholder{
@@ -154,7 +159,7 @@ textarea:focus::placeholder{
 
 #entrada{
     padding: 60px 30px;
-
+    width: 80%;
     margin-left: 30px;
     transform-style: initial ;
     transition-duration: 1s;
@@ -201,8 +206,8 @@ textarea:focus::placeholder{
     position: relative;
     left:100px;
     overflow: hidden;
-    width: 800px;
-    height: 500px;
+    width: 49%;
+    height: auto;
 
     margin-bottom: 10px;
 }
@@ -210,11 +215,11 @@ textarea:focus::placeholder{
     overflow-y: auto;
     overflow-wrap: break-word;
     display: inline-block;
-    position:absolute;
+    position:relative;
     padding: 40px 60px;
-    left: 1050px;
+    left:3%;
     top: 5px;
-    width: 770px;
+    width: 40%;
     height: 650px;
 
     background: #22272c no-repeat center;
@@ -229,7 +234,7 @@ textarea:focus::placeholder{
 }
 .h1{
     border-width: 2px;
-    border-color:red;
+
     font-family: 'Heebo', sans-serif;
     font-size: x-large;
     color:white ;
@@ -254,4 +259,97 @@ textarea:focus::placeholder{
 ::-webkit-scrollbar-thumb:vertical {
     background-color: #666;
     -webkit-border-radius: 6px;
+}
+
+@media screen and (max-width: 768px ) {
+    h1 img{
+
+        left:  60px;
+    }
+
+    html{
+       height: 938px;
+   }
+    nav{
+        position: relative;
+        top: 70px;
+
+        float: right;
+        width: 400px;
+
+
+    }
+    li{
+        background: gray;
+        float: right;
+    }
+    .div-entrada{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        left:50px;
+        overflow: hidden;
+        width: 40%;
+        height: 70%;
+
+        margin-bottom: 10px;
+    }
+
+    textarea{
+        width: 60%;
+
+
+
+
+    }
+    #entrada{
+        padding: 10px 10px;
+
+    }
+    .div-saida {
+
+        left:9%;
+        top: 5px;
+        width: 46%;
+        height: 650px;
+
+
+
+    }
+    .botoes{
+        display: inline-block ;
+        position: absolute;
+        top: 420px;
+        background: green;
+        width: 40%;
+        float: left;
+        margin: 30px 0;
+        padding: 0 0;
+        border-width: 0;
+        left: 50px;
+
+
+
+    }
+    .botao{
+
+        width: 40%;
+        display: inline-block;
+        padding: 15px;
+        margin: 10px 10px;
+        border-radius: 0 0 0 15px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 1.5vw;
+        color: #666666;
+        font-weight: bolder;
+        transition: 0.2s;
+        ;
+
+
+    }
+
+    body{
+        height: 100%;
+
+    }
 }
