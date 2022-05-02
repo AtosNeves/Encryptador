@@ -107,8 +107,8 @@ textarea:focus::placeholder{
     display: inline-block ;
     position: absolute;
     top: 480px;
-    width: 50%;
-    left: 6%;
+    width: 35%;
+    left: 12%;
 
     margin: 30px 0;
     padding: 10px 10px;
@@ -120,19 +120,15 @@ textarea:focus::placeholder{
 }
 .botao:hover{
 
-    border-radius: 0 10px 0 0;
-    background-color: #dddddd;
-    border-bottom-width: 5px;
+    border-radius: 0 50px 5px 0;
+    background-color: #555555 ;
 
-    border-bottom-color: #666666;
+    border-bottom-color: #3B444B  ;
     cursor: pointer;
-    transform: skewY(1deg);
-
-
-
-
-
-
+    transform: skewY(0.5deg);
+    letter-spacing:0.1mm;
+    text-decoration: blink;
+    transition: 1s;
 }
 
 .botao{
@@ -140,12 +136,13 @@ textarea:focus::placeholder{
     padding: 4% 2%;
     margin:3% 3%;
     border-radius: 0 0 0 15px;
-    font-family: 'Questrial', sans-serif;
-    font-size: 1.3vw;
-    color: #666666;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1vw;
+    color: ghostwhite;
     font-weight: bolder;
     transition: 0.2s;
     width: 30%;
+    background: #333333 ;
 
 }
 #entrada:focus::placeholder,#saida:focus::placeholder,#entrada:hover::placeholder{
