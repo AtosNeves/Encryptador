@@ -122,10 +122,9 @@ textarea:focus::placeholder{
 
     border-radius: 0 50px 5px 0;
     background-color: #555555 ;
-
     border-bottom-color: #3B444B  ;
     cursor: pointer;
-    transform: skewY(0.5deg);
+    transform: skewY(0.9deg);
     letter-spacing:0.1mm;
     text-decoration: blink;
     transition: 1s;
