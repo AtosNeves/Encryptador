@@ -61,6 +61,7 @@ body{
     background-size: cover;
     overflow: auto;
 
+
 }
 .centro{
 
@@ -106,7 +107,7 @@ textarea:focus::placeholder{
 .botoes{
     display: inline-block ;
     position: absolute;
-    top: 480px;
+    top: 500px;
     width: 35%;
     left: 12%;
 
@@ -127,7 +128,9 @@ textarea:focus::placeholder{
     transform: skewY(0.9deg);
     letter-spacing:0.1mm;
     text-decoration: blink;
-    transition: 1s;
+    transition: 0.5s;
+    box-shadow: 10px -8px 0.4em #333333  ;
+
 }
 
 .botao{
@@ -142,14 +145,17 @@ textarea:focus::placeholder{
     transition: 0.2s;
     width: 30%;
     background: #333333 ;
+    border-width: 0;
 
 }
 #entrada:focus::placeholder,#saida:focus::placeholder,#entrada:hover::placeholder{
     color: transparent;
     transition-delay: 1s;
+
 }
 #entrada:hover,#entrada:focus{
     transform: scale(105%);
+
 
 
     background-color: #3B444B ;
@@ -163,6 +169,7 @@ textarea:focus::placeholder{
     transform-style: initial ;
     transition-duration: 1s;
     background-color: transparent;
+
     color: white;
     height: 400px;
 
