@@ -41,11 +41,13 @@ function descriptografarPalavra(event){
             var quebra = document.createElement("br");
             saida.appendChild(quebra);
 
-            const myTimeout = setTimeout(myGreeting, 500);
+            const myTimeout = setTimeout(myGreeting, 100);
 
 
             function myGreeting(){
                 saida.style.background= "#121212ff";
+                let timestamp = myTimeout;
+
             }
 
 
