@@ -1,4 +1,6 @@
-
+html{
+    overflow: hidden;
+}
 header{
     position: relative;
     margin-bottom: 10px;
@@ -57,7 +59,8 @@ h1 img{
 body{
 
 
-    background: url("../images/backnovo.svg") no-repeat;
+    background: url("../images/backnovo.svg") no-repeat fixed;
+    resize: both;
     background-size: cover;
     overflow: auto;
 
@@ -92,6 +95,7 @@ textarea{
     outline: none;
     font-family: 'Heebo', sans-serif;
     font-size: 2vw;
+
 
 }
 
@@ -158,7 +162,7 @@ textarea:focus::placeholder{
 
 
 
-    background-color: #3B444B ;
+    background-color: #121212ff ;
 
 }
 
@@ -201,9 +205,10 @@ textarea:focus::placeholder{
 
 }
 .div-saida:focus,.div-saida:hover{
-    background-color: #3B444B;
-    background-blend-mode: overlay;
+   /* background: #121212ff;*/
+    background-blend-mode: hard-light   ;
     transform: scale(102%);
+
 
 }
 
@@ -228,8 +233,9 @@ textarea:focus::placeholder{
     top: 5px;
     width: 40%;
     height: 650px;
-
-    background: #22272c no-repeat center;
+    filter: grayscale(1%);
+    background: url("../images/empty.svg")center no-repeat;
+    background-size: contain  ;
     background-blend-mode: soft-light;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -243,7 +249,7 @@ textarea:focus::placeholder{
     border-width: 2px;
 
     font-family: 'Heebo', sans-serif;
-    font-size: x-large;
+    font-size: 2vw;
     color:white ;
     max-width: 750px;
     font-palette: light;

@@ -10,7 +10,7 @@ function criptografarfarPalavra(event){
     var entradaForm = document.querySelector("#form-palavra");
 
     var palavra = entradaForm.palavra.value;
-    if (entrada.value!="") {
+    if (entrada.value!=="") {
         var saidaH1 = document.createElement("h1");
 
         saidaH1.textContent = criptografar1(palavra).join("");
@@ -19,17 +19,28 @@ function criptografarfarPalavra(event){
         console.log("fff")
 
         var saida = document.querySelector(".div-saida");
+
+
         saidaH1.classList.add("h1");
 
         saida.appendChild(saidaH1);
         var quebra = document.createElement("br");
+
         saida.appendChild(quebra);
+
+        const myTimeout = setTimeout(myGreeting, 500);
+
+
+        function myGreeting(){
+            saida.style.background= "#121212ff";
+        }
+
+
 
     }
     entrada.value = "";
 
 }
-
 
 
 
