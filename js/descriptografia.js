@@ -41,6 +41,12 @@ function descriptografarPalavra(event){
             var quebra = document.createElement("br");
             saida.appendChild(quebra);
 
+            const myTimeout = setTimeout(myGreeting, 500);
+
+
+            function myGreeting(){
+                saida.style.background= "#121212ff";
+            }
 
 
         }
