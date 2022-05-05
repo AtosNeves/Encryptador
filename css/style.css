@@ -251,7 +251,7 @@ textarea:focus::placeholder{
     font-family: 'Heebo', sans-serif;
     font-size: 2vw;
     color:white ;
-    max-width: 750px;
+
     font-palette: light;
 
 }
@@ -274,10 +274,15 @@ textarea:focus::placeholder{
     -webkit-border-radius: 6px;
 }
 
-@media screen and (max-width: 768px ) {
+@media screen and (max-width: 425px ) {
+    header {
+        height: 150px;
+    }
     h1 img{
 
         left:  60px;
+        width: 15%;
+        height: 40%;
     }
 
     html{
@@ -285,56 +290,84 @@ textarea:focus::placeholder{
    }
     nav{
         position: relative;
-        top: 70px;
+        top: 30px;
 
         float: right;
         width: 400px;
+        height: 80px;
 
 
     }
-    li{
-        background: gray;
+    ul{
+        width: 100px;
+        height: 60px;
         float: right;
+        display: flex ;
+        flex-direction:column  ;
     }
+    ul li{
+
+        float: right;
+
+        margin: 5% 0;
+        padding: 0 0;
+
+    }
+
+    .centro{
+
+        height:100%;
+        position: relative;
+
+
+        margin: 0 auto;
+        box-sizing: border-box;
+
+
+    }
+
+
     .div-entrada{
         display: inline-block;
         vertical-align: top;
         position: relative;
-        left:50px;
+        left:5%;
         overflow: hidden;
-        width: 40%;
-        height: 70%;
+        width: 90%;
+        height: 50%;
 
         margin-bottom: 10px;
     }
 
     textarea{
-        width: 60%;
-
-
+        width: 90%;
 
 
     }
     #entrada{
         padding: 10px 10px;
-
+        width: 80%;
+        height: 200px;
+        background: #333333 ;
     }
+
+
     .div-saida {
 
-        left:9%;
-        top: 5px;
-        width: 46%;
-        height: 650px;
-
+        left:10%;
+        top: 70px;
+        width: 80%;
+        height: 200px;
+        padding: 20px 30px;
 
 
     }
     .botoes{
         display: inline-block ;
         position: absolute;
-        top: 420px;
-        background: green;
-        width: 40%;
+        top: 230px;
+
+        width: 80%;
         float: left;
         margin: 30px 0;
         padding: 0 0;
@@ -357,6 +390,133 @@ textarea:focus::placeholder{
         font-weight: bolder;
         transition: 0.2s;
         ;
+
+
+    }
+
+    body{
+        height: 100%;
+
+    }
+}
+@media screen and (min-width:768px ) and (max-width:1023px ) {
+    header {
+        height: 150px;
+    }
+    h1 img{
+
+        left:  60px;
+        width: 8%;
+        height: 35%;
+    }
+
+    html{
+        height: 938px;
+    }
+    nav{
+        position: relative;
+        top: 50px;
+
+        float: right;
+        width: 400px;
+        height: 80px;
+
+
+    }
+    ul{
+        width: 100px;
+        height: 60px;
+        float: right;
+        display: flex ;
+        flex-direction:row-reverse ;
+        margin-right: 50px;
+    }
+    ul li{
+
+        float: right;
+
+        margin: 5% 20%;
+        padding: 0 0;
+
+    }
+
+    .centro{
+
+        height:100%;
+        position: relative;
+
+
+        margin: 0 auto;
+        box-sizing: border-box;
+
+
+    }
+
+
+    .div-entrada{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        left:5%;
+        overflow: hidden;
+        width: 100%;
+        height: 50%;
+
+        margin-bottom: 10px;
+    }
+
+    textarea{
+        width: 90%;
+
+
+    }
+    #entrada{
+        padding: 10px 10px;
+        width: 80%;
+        height: 200px;
+        background: #333333 ;
+
+    }
+
+
+    .div-saida {
+
+        left:10%;
+        top: 70px;
+        width: 83%;
+        height: 200px;
+        padding: 20px 30px;
+
+
+    }
+    .botoes{
+        display: inline-block ;
+        position: absolute;
+        top: 270px;
+
+        width: 80%;
+        float: left;
+        margin: auto 10px ;
+        padding: 0 0;
+        border-width: 0;
+        left: 100px;
+
+
+
+    }
+    .botao{
+
+        width: 40%;
+        display: inline-block;
+        padding: 20px;
+        margin: auto 10px ;
+        border-radius: 0 0 0 15px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 1.5vw;
+        color: #666666;
+        font-weight: bolder;
+        transition: 0.2s;
+    ;
 
 
     }

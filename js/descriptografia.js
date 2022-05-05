@@ -99,10 +99,7 @@ function criptografar2(entrada){
             sai[i+3] ="";
 
         }
-
-
     }
-
     return sai;
 
 }

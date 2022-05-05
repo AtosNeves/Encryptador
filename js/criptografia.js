@@ -51,19 +51,19 @@ function criptografar1(entrada){
 
     for (let i = 0; i < sai.length; i++) {
 
-        if (sai[i] == "a") {
+        if (sai[i] === "a") {
             sai[i] = "ai";
         }
-        if (sai[i] == "e") {
+        if (sai[i] === "e") {
             sai[i] = "enter";
         }
-        if (sai[i] == "i") {
+        if (sai[i] === "i") {
             sai[i] = "imes";
         }
-        if (sai[i] == "o") {
+        if (sai[i] === "o") {
             sai[i] = "ober";
         }
-        if (sai[i] == "u") {
+        if (sai[i] === "u") {
             sai[i] = "ufat";
         }
     }
