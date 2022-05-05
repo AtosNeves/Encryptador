@@ -282,15 +282,15 @@ textarea:focus::placeholder{
 
         left:  60px;
         width: 15%;
-        height: 40%;
+        height: 35%;
     }
 
     html{
-       height: 938px;
+       height: 100%;
    }
     nav{
         position: relative;
-        top: 30px;
+        top: 50px;
 
         float: right;
         width: 400px;
@@ -306,7 +306,7 @@ textarea:focus::placeholder{
         flex-direction:column  ;
     }
     ul li{
-
+        font-size: 15px;
         float: right;
 
         margin: 5% 0;
@@ -399,6 +399,132 @@ textarea:focus::placeholder{
 
     }
 }
+@media screen and (max-width: 767px ) {
+    header {
+        height: 150px;
+    }
+    h1 img{
+
+        left:  60px;
+        width: 15%;
+        height: 35%;
+    }
+
+    html{
+        height: 100%;
+    }
+    nav{
+        position: relative;
+        top: 50px;
+
+        float: right;
+        width: 400px;
+        height: 80px;
+
+
+    }
+    ul{
+        width: 100px;
+        height: 60px;
+        float: right;
+        display: flex ;
+        flex-direction:column  ;
+    }
+    ul li{
+        font-size: 15px;
+        float: right;
+
+        margin: 5% 0;
+        padding: 0 0;
+
+    }
+
+    .centro{
+
+        height:100%;
+        position: relative;
+
+
+        margin: 0 auto;
+        box-sizing: border-box;
+
+
+    }
+
+
+    .div-entrada{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        left:5%;
+        overflow: hidden;
+        width: 90%;
+        height: 50%;
+
+        margin-bottom: 10px;
+    }
+
+    textarea{
+        width: 90%;
+
+
+    }
+    #entrada{
+        padding: 10px 10px;
+        width: 80%;
+        height: 200px;
+        background: #333333 ;
+    }
+
+
+    .div-saida {
+
+        left:10%;
+        top: 70px;
+        width: 80%;
+        height: 200px;
+        padding: 20px 30px;
+
+
+    }
+    .botoes{
+        display: inline-block ;
+        position: absolute;
+        top: 230px;
+
+        width: 80%;
+        float: left;
+        margin: 30px 0;
+        padding: 0 0;
+        border-width: 0;
+        left: 50px;
+
+
+
+    }
+    .botao{
+
+        width: 40%;
+        display: inline-block;
+        padding: 15px;
+        margin: 10px 10px;
+        border-radius: 0 0 0 15px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 1.5vw;
+        color: #666666;
+        font-weight: bolder;
+        transition: 0.2s;
+    ;
+
+
+    }
+
+    body{
+        height: 100%;
+
+    }
+}
+
 @media screen and (min-width:768px ) and (max-width:1023px ) {
     header {
         height: 150px;
