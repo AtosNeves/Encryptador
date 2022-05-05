@@ -235,7 +235,7 @@ textarea:focus::placeholder{
     height: 650px;
     filter: grayscale(1%);
     background: url("../images/empty.svg")center no-repeat;
-    background-size: contain  ;
+    background-size: 80% 80%    ;
     background-blend-mode: soft-light;
     box-sizing: border-box;
     margin-bottom: 10px;
