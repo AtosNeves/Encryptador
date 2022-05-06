@@ -511,10 +511,11 @@ textarea:focus::placeholder{
         border-radius: 0 0 0 15px;
         font-family: 'Questrial', sans-serif;
         font-size: 1.5vw;
-        color: #666666;
+        color: lightgray;
         font-weight: bolder;
         transition: 0.2s;
-    ;
+
+
 
 
     }
@@ -639,7 +640,7 @@ textarea:focus::placeholder{
         border-radius: 0 0 0 15px;
         font-family: 'Questrial', sans-serif;
         font-size: 1.5vw;
-        color: #666666;
+        color: lightgray;
         font-weight: bolder;
         transition: 0.2s;
     ;
